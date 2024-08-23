@@ -17,7 +17,21 @@ namespace SummonCreaturesApp
             InitializeComponent();
         }
 
-        private void attackButton_Click(object sender, EventArgs e)
+       
+        private List<SummonedCreature> summonedCreatures = new List<SummonedCreature>();
+
+        private void summonButton_Click(object sender, EventArgs e)
+        {
+            string name = creatureNameTextBox.Text;
+            int Level = new Random().Next(1, 101);// ランダムにレベルを設定
+            SummonedCreature creature = new SummonedCreature(name, Level);
+
+            summonedCreatures.Add(creature);
+            creatureListBox.Items.Add($"{name} (レベル{Level})");
+            actionResultLabel.Text = $"{name}が召喚されました!";
+        }
+        
+         private void attackButton_Click(object sender, EventArgs e)
         {
             
             if (creatureListBox.SelectedIndex>=0)
@@ -32,6 +46,5 @@ namespace SummonCreaturesApp
             {
                 actionResultLabel.Text = "攻撃するクリーチャーを選択してください";
             }
-        }
     }
 }

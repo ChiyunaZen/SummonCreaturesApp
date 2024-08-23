@@ -61,6 +61,7 @@
             this.summonButton.TabIndex = 2;
             this.summonButton.Text = "召喚ボタン";
             this.summonButton.UseVisualStyleBackColor = true;
+            this.summonButton.Click += new System.EventHandler(this.summonButton_Click);
             // 
             // attackButton
             // 
