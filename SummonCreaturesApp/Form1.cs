@@ -17,7 +17,7 @@ namespace SummonCreaturesApp
             InitializeComponent();
         }
 
-       
+
         private List<SummonedCreature> summonedCreatures = new List<SummonedCreature>();
 
         private void summonButton_Click(object sender, EventArgs e)
@@ -30,14 +30,14 @@ namespace SummonCreaturesApp
             creatureListBox.Items.Add($"{name} (レベル{Level})");
             actionResultLabel.Text = $"{name}が召喚されました!";
         }
-        
-         private void attackButton_Click(object sender, EventArgs e)
+
+        private void attackButton_Click(object sender, EventArgs e)
         {
-            
-            if (creatureListBox.SelectedIndex>=0)
+
+            if (creatureListBox.SelectedIndex >= 0)
             //creatureListBoxで一つ以上の要素が選択されている場合に実行される処理
             {
-                SummonedCreature selectedCreature = summondCreature[creatureListBox.SelectedIndex];
+                SummonedCreature selectedCreature = summonedCreatures[creatureListBox.SelectedIndex];
                 //summondCreatureリスト内の選択している番号の要素を取り出し
                 actionResultLabel.Text = selectedCreature.Attack();
                 //取り出した要素のAttackメソッドを実行
@@ -46,5 +46,6 @@ namespace SummonCreaturesApp
             {
                 actionResultLabel.Text = "攻撃するクリーチャーを選択してください";
             }
+        }
     }
 }
