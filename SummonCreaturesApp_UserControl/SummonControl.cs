@@ -33,5 +33,18 @@ namespace SummonCreaturesApp_UserControl
 
         public int SelectedIndex => creatureListBox.SelectedIndex;
         public SummonedCreature SelectedCreature => creatureListBox.SelectedItem as SummonedCreature;
+
+        private void removeButton_Click(object sender, EventArgs e)
+        {
+            // 選択された行を削除
+            if (creatureListBox.SelectedItem != null)
+            {
+                creatureListBox.Items.Remove(creatureListBox.SelectedItem);
+            }
+            else
+            {
+                MessageBox.Show("選択されてない");
+            }
+        }
     }
 }

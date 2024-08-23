@@ -50,6 +50,7 @@
             this.removeButton.TabIndex = 1;
             this.removeButton.Text = "削除";
             this.removeButton.UseVisualStyleBackColor = true;
+            this.removeButton.Click += new System.EventHandler(this.removeButton_Click);
             // 
             // renameButton
             // 
