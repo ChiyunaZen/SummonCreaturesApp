@@ -35,9 +35,9 @@
             // 
             this.creatureListBox.FormattingEnabled = true;
             this.creatureListBox.ItemHeight = 15;
-            this.creatureListBox.Location = new System.Drawing.Point(13, 29);
+            this.creatureListBox.Location = new System.Drawing.Point(0, 4);
             this.creatureListBox.Name = "creatureListBox";
-            this.creatureListBox.Size = new System.Drawing.Size(120, 94);
+            this.creatureListBox.Size = new System.Drawing.Size(196, 169);
             this.creatureListBox.TabIndex = 0;
             // 
             // SummonControl
@@ -46,6 +46,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.creatureListBox);
             this.Name = "SummonControl";
+            this.Size = new System.Drawing.Size(196, 175);
             this.ResumeLayout(false);
 
         }
