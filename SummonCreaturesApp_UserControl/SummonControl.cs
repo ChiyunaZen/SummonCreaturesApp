@@ -12,6 +12,8 @@ namespace SummonCreaturesApp_UserControl
 {
     public partial class SummonControl : UserControl
     {
+        Form1 form1 = new Form1();
+
         public SummonControl()
         {
             InitializeComponent();
@@ -38,7 +40,8 @@ namespace SummonCreaturesApp_UserControl
 
         private void renameButton_Click(object sender, EventArgs e)
         {
-            string newName = "";
+           
+            string newName = form1.GetNameText();
 
             if (newName != "")
             {
@@ -50,6 +53,7 @@ namespace SummonCreaturesApp_UserControl
             }
         }
 
+      
         private void UpdateSelectedItemText(string newName)
         {
             if (creatureListBox.SelectedItem != null)

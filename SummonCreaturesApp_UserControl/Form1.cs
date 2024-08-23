@@ -16,7 +16,10 @@ namespace SummonCreaturesApp_UserControl
         public Form1()
         {
             InitializeComponent();
+            var creatureRename =new SummonControl();
         }
+
+        
 
         private void attackButton_Click(object sender, EventArgs e)
         {
@@ -45,6 +48,11 @@ namespace SummonCreaturesApp_UserControl
                 MessageBox.Show("クリーチャーの名前を入力してください");
                 return;
             }
+
+        }
+        public string GetNameText()
+        {
+            return creatureNameTextBox.Text;
         }
     }
 }
