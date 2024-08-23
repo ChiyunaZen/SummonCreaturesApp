@@ -33,5 +33,35 @@ namespace SummonCreaturesApp_UserControl
 
         public int SelectedIndex => creatureListBox.SelectedIndex;
         public SummonedCreature SelectedCreature => creatureListBox.SelectedItem as SummonedCreature;
+
+
+
+        private void renameButton_Click(object sender, EventArgs e)
+        {
+            string newName = "";
+
+            if (newName != "")
+            {
+                UpdateSelectedItemText(newName);
+            }
+            else
+            {
+                MessageBox.Show("名前が入力されていません");
+            }
+        }
+
+        private void UpdateSelectedItemText(string newName)
+        {
+            if (creatureListBox.SelectedItem != null)
+            {
+                int selectedIndex = creatureListBox.SelectedIndex;
+
+                creatureListBox.Items[selectedIndex] = newName;
+            }
+            else
+            {
+                MessageBox.Show("選択されていません");
+            }
+        }
     }
 }
