@@ -55,7 +55,7 @@
             // 
             // attackButton
             // 
-            this.attackButton.Location = new System.Drawing.Point(273, 248);
+            this.attackButton.Location = new System.Drawing.Point(273, 266);
             this.attackButton.Name = "attackButton";
             this.attackButton.Size = new System.Drawing.Size(125, 59);
             this.attackButton.TabIndex = 2;
@@ -83,16 +83,16 @@
             // 
             // summonControl
             // 
-            this.summonControl.Location = new System.Drawing.Point(49, 131);
+            this.summonControl.Location = new System.Drawing.Point(49, 118);
             this.summonControl.Name = "summonControl";
-            this.summonControl.Size = new System.Drawing.Size(197, 176);
+            this.summonControl.Size = new System.Drawing.Size(197, 207);
             this.summonControl.TabIndex = 4;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(439, 354);
+            this.ClientSize = new System.Drawing.Size(429, 354);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.summonControl);
             this.Controls.Add(this.actionResultLabel);
