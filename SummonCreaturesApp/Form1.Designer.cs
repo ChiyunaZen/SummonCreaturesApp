@@ -71,6 +71,7 @@
             this.attackButton.TabIndex = 3;
             this.attackButton.Text = "攻撃ボタン";
             this.attackButton.UseVisualStyleBackColor = true;
+            this.attackButton.Click += new System.EventHandler(this.attackButton_Click);
             // 
             // creatureListBox
             // 
