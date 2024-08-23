@@ -18,6 +18,18 @@ namespace SummonCreaturesApp_UserControl
             InitializeComponent();
         }
 
+        private void attackButton_Click(object sender, EventArgs e)
+        {
+            SummonedCreature selectedCreature = summonControl.SelectedCreature;
+            if (selectedCreature != null)
+            {
+                actionResultLabel.Text = selectedCreature.Attack();
+            }
+            else
+            {
+                actionResultLabel.Text = "攻撃するクリーチャーを選択してください。";
+            }
+        }
         private void summonButton_Click(object sender, EventArgs e)
         {
             if (creatureNameTextBox.Text != "")

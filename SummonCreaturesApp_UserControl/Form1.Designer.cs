@@ -32,8 +32,8 @@
             this.summonButton = new System.Windows.Forms.Button();
             this.attackButton = new System.Windows.Forms.Button();
             this.actionResultLabel = new System.Windows.Forms.Label();
-            this.summonControl = new SummonCreaturesApp_UserControl.SummonControl();
             this.label1 = new System.Windows.Forms.Label();
+            this.summonControl = new SummonCreaturesApp_UserControl.SummonControl();
             this.SuspendLayout();
             // 
             // creatureNameTextBox
@@ -61,6 +61,7 @@
             this.attackButton.TabIndex = 2;
             this.attackButton.Text = "攻撃";
             this.attackButton.UseVisualStyleBackColor = true;
+            this.attackButton.Click += new System.EventHandler(this.attackButton_Click);
             // 
             // actionResultLabel
             // 
@@ -71,13 +72,6 @@
             this.actionResultLabel.TabIndex = 3;
             this.actionResultLabel.Text = "label1";
             // 
-            // summonControl
-            // 
-            this.summonControl.Location = new System.Drawing.Point(49, 131);
-            this.summonControl.Name = "summonControl";
-            this.summonControl.Size = new System.Drawing.Size(197, 176);
-            this.summonControl.TabIndex = 4;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -87,6 +81,13 @@
             this.label1.Size = new System.Drawing.Size(170, 15);
             this.label1.TabIndex = 5;
             this.label1.Text = "▼クリーチャーの名前を入力";
+            // 
+            // summonControl
+            // 
+            this.summonControl.Location = new System.Drawing.Point(49, 131);
+            this.summonControl.Name = "summonControl";
+            this.summonControl.Size = new System.Drawing.Size(197, 176);
+            this.summonControl.TabIndex = 4;
             // 
             // Form1
             // 
