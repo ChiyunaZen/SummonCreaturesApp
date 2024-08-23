@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.creatureListBox = new System.Windows.Forms.ListBox();
+            this.removeButton = new System.Windows.Forms.Button();
+            this.renameButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // creatureListBox
@@ -37,16 +39,36 @@
             this.creatureListBox.ItemHeight = 15;
             this.creatureListBox.Location = new System.Drawing.Point(0, 4);
             this.creatureListBox.Name = "creatureListBox";
-            this.creatureListBox.Size = new System.Drawing.Size(196, 169);
+            this.creatureListBox.Size = new System.Drawing.Size(196, 154);
             this.creatureListBox.TabIndex = 0;
+            // 
+            // removeButton
+            // 
+            this.removeButton.Location = new System.Drawing.Point(3, 164);
+            this.removeButton.Name = "removeButton";
+            this.removeButton.Size = new System.Drawing.Size(81, 32);
+            this.removeButton.TabIndex = 1;
+            this.removeButton.Text = "削除";
+            this.removeButton.UseVisualStyleBackColor = true;
+            // 
+            // renameButton
+            // 
+            this.renameButton.Location = new System.Drawing.Point(90, 164);
+            this.renameButton.Name = "renameButton";
+            this.renameButton.Size = new System.Drawing.Size(81, 32);
+            this.renameButton.TabIndex = 2;
+            this.renameButton.Text = "変更";
+            this.renameButton.UseVisualStyleBackColor = true;
             // 
             // SummonControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.renameButton);
+            this.Controls.Add(this.removeButton);
             this.Controls.Add(this.creatureListBox);
             this.Name = "SummonControl";
-            this.Size = new System.Drawing.Size(196, 175);
+            this.Size = new System.Drawing.Size(196, 281);
             this.ResumeLayout(false);
 
         }
@@ -54,5 +76,7 @@
         #endregion
 
         private System.Windows.Forms.ListBox creatureListBox;
+        private System.Windows.Forms.Button removeButton;
+        private System.Windows.Forms.Button renameButton;
     }
 }

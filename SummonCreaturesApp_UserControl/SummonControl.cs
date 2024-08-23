@@ -18,9 +18,12 @@ namespace SummonCreaturesApp_UserControl
         }
 
         public SummonedCreature Summon(string name)
+        //stringの引数を受け取りSummonedCreature型を返すメソッド
         {
             int level = new Random().Next(0, 101);
+            //レベルの値を1-100の間でランダムに生成する
             return new SummonedCreature(name, level);
+            //引数の名前とランダム生成したレベルでクリーチャーを生成
         }
 
         public void DisplayCreature(SummonedCreature creature)
