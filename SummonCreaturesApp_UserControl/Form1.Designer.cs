@@ -42,6 +42,7 @@
             this.creatureNameTextBox.Name = "creatureNameTextBox";
             this.creatureNameTextBox.Size = new System.Drawing.Size(197, 22);
             this.creatureNameTextBox.TabIndex = 0;
+            this.creatureNameTextBox.Text = "aaaaa";
             // 
             // summonButton
             // 
