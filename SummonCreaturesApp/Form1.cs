@@ -16,5 +16,18 @@ namespace SummonCreaturesApp
         {
             InitializeComponent();
         }
+
+        private List<SummonedCreature> summonedCreatures = new List<SummonedCreature>();
+
+        private void summonButton_Click(object sender, EventArgs e)
+        {
+            string name = creatureListBox.Text;
+            int Level = new Random().Next(1, 101);// ランダムにレベルを設定
+            SummonedCreature creature = new SummonedCreature(name, Level);
+
+            summonedCreatures.Add(creature);
+            creatureListBox.Items.Add($"{name} (レベル{Level})");
+            actionResultLabel.Text = $"{name}が召喚されました!";
+        }
     }
 }
