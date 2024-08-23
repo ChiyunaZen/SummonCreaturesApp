@@ -21,7 +21,7 @@ namespace SummonCreaturesApp
 
         private void summonButton_Click(object sender, EventArgs e)
         {
-            string name = creatureListBox.Text;
+            string name = creatureNameTextBox.Text;
             int Level = new Random().Next(1, 101);// ランダムにレベルを設定
             SummonedCreature creature = new SummonedCreature(name, Level);
 
