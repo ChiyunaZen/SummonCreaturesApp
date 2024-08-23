@@ -68,9 +68,8 @@
             this.actionResultLabel.AutoSize = true;
             this.actionResultLabel.Location = new System.Drawing.Point(46, 99);
             this.actionResultLabel.Name = "actionResultLabel";
-            this.actionResultLabel.Size = new System.Drawing.Size(43, 15);
+            this.actionResultLabel.Size = new System.Drawing.Size(0, 15);
             this.actionResultLabel.TabIndex = 3;
-            this.actionResultLabel.Text = "label1";
             // 
             // label1
             // 
