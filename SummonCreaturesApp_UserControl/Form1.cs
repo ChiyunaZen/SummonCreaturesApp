@@ -16,14 +16,16 @@ namespace SummonCreaturesApp_UserControl
         public Form1()
         {
             InitializeComponent();
-            var creatureRename =new SummonControl();
+            var creatureRename = new SummonControl();
+            summonControl.Init(this);
         }
 
-        
+
 
         private void attackButton_Click(object sender, EventArgs e)
         {
             SummonedCreature selectedCreature = summonControl.SelectedCreature;
+
             if (selectedCreature != null)
             {
                 actionResultLabel.Text = selectedCreature.Attack();

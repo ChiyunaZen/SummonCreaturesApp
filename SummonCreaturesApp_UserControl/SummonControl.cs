@@ -12,10 +12,16 @@ namespace SummonCreaturesApp_UserControl
 {
     public partial class SummonControl : UserControl
     {
+        Form1 form1;
 
         public SummonControl()
         {
             InitializeComponent();
+        }
+
+        public void Init(Form1 form1)
+        {
+            this.form1 = form1;
         }
 
         public SummonedCreature Summon(string name)
@@ -39,8 +45,6 @@ namespace SummonCreaturesApp_UserControl
 
         private void renameButton_Click(object sender, EventArgs e)
         {
-            Form1 form1 = new Form1();
-
             string newName = form1.GetNameText();
 
             if (newName != "")
